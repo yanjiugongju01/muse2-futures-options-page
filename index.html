@@ -13,7 +13,7 @@ th { background: #f2f2f2; } p { font-size: 14px; line-height: 1.6; color: #444; 
 </head>
 <body>
 <h1>期货期权公开表</h1>
-<p>更新时点：收盘　更新时间：2026-11-04 20:41（北京时间）<br>
+<p>更新时点：收盘　更新时间：2026-11-04 20:46（北京时间）<br>
 数据日：2026-11-04（上个交易日收盘/结算，07:00 飞书晨间表同源）</p>
 <h2>股指期货 · 主力合约</h2>
 <table><tr><th>品种</th><th>合约</th><th>价格（结算价）</th><th>涨跌幅</th></tr>
@@ -36,8 +36,17 @@ th { background: #f2f2f2; } p { font-size: 14px; line-height: 1.6; color: #444; 
 <tr><td>原油</td><td>认购</td><td>sc2612C750</td><td>11.85</td><td><span class="down">▼-33.43%</span></td><td>31,017</td></tr>
 <tr><td>原油</td><td>认沽</td><td>sc2612P600</td><td>8.55</td><td><span class="up">▲+33.59%</span></td><td>38,486</td></tr>
 </table>
+<h2>股指期权 - 最活跃合约（持仓量最大）</h2>
+<table><tr><th>品种</th><th>方向</th><th>合约</th><th>价格（最新价）</th><th>涨跌幅</th><th>持仓量</th></tr>
+<tr><td>沪深300股指期权</td><td>认购</td><td>io2611C4200</td><td>26.6</td><td><span class="up">▲+84.72%</span></td><td>13,086</td></tr>
+<tr><td>沪深300股指期权</td><td>认沽</td><td>io2611P4000</td><td>31.6</td><td><span class="down">▼-57.53%</span></td><td>4,604</td></tr>
+<tr><td>中证1000股指期权</td><td>认购</td><td>mo2611C7000</td><td>45.8</td><td><span class="up">▲+124.51%</span></td><td>25,222</td></tr>
+<tr><td>中证1000股指期权</td><td>认沽</td><td>mo2611P6000</td><td>45.4</td><td><span class="down">▼-66.17%</span></td><td>8,835</td></tr>
+<tr><td>上证50股指期权</td><td>认购</td><td>ho2611C2800</td><td>32.4</td><td><span class="up">▲+82.02%</span></td><td>6,426</td></tr>
+<tr><td>上证50股指期权</td><td>认沽</td><td>ho2611P2750</td><td>18</td><td><span class="down">▼-49.15%</span></td><td>2,333</td></tr>
+</table>
 <p>口径：期货与期权价格均为结算价，涨跌幅 =（结算价 - 前结算价）/ 前结算价；
-期权活跃 = 当日成交量最大，认购认沽分开取；股指期货主力 = 当日成交量最大合约。
+期权活跃 = 当日成交量最大，认购认沽分开取；股指期货主力 = 当日成交量最大合约。股指期权除外：价格为最新价（收盘时即收盘价），涨跌幅为新浪链涨跌幅（相对前收盘），活跃 = 持仓量最大（新浪链无成交量）；中证500没有股指期权。
 本页每交易日中午、15:00、23:00 各更新一次，非交易日不更新。</p>
 <p><b>缺口：</b>PP：数据源暂缺（dce接口受限，JSONDecodeError）；L：数据源暂缺（dce接口受限，JSONDecodeError）。</p>
 </body>
